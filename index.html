@@ -5,12 +5,88 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
+    <title>OpenNIC Trust Services</title>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
 
   <body>
+    <nav class="green darken-1">
+      <div class="nav-wrapper container">
+        <a href="index.html" class="brand-logo">OpenNIC Trust Services</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h4>CA certificates</h4>
+      <h5>Root certificates</h5>
+      <table>
+        <thead>
+          <tr>
+              <th data-field="name">Name</th>
+              <th data-field="pubkey">Public Key</th>
+              <th data-field="print">Fingerprint (SHA 1)</th>
+              <th data-field="expire">Expiration</th>
+              <th data-field="links">Links</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>OpenNIC Root R1</td>
+            <td>RSA 4096, SHA-384</td>
+            <td>11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11	</td>
+            <td>January 28, 2037</td>
+            <td><a href="https://pki.opennicproject.org/ONICR1.crt">PEM</a>&nbsp;<a href="http://crl.pki.opennicproject.org/ONICR1.crl">CRL</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <h5>Subordinate CA certificates</h5>
+      <table>
+        <thead>
+          <tr>
+              <th data-field="name">Name</th>
+              <th data-field="pubkey">Public Key</th>
+              <th data-field="print">Fingerprint (SHA 1)</th>
+              <th data-field="expire">Expiration</th>
+              <th data-field="links">Links</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>OpenNIC Authority X1</td>
+            <td>RSA 2048, SHA-256</td>
+            <td>11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11	</td>
+            <td>January 28, 2027</td>
+            <td><a href="https://pki.opennicproject.org/ONICX1.crt">PEM</a>&nbsp;<a href="http://crl.pki.opennicproject.org/ONICX1.crl">CRL</a></td>
+          </tr>
+          <tr>
+            <td>OpenNIC Authority X2</td>
+            <td>RSA 2048, SHA-256</td>
+            <td>11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11	</td>
+            <td>January 28, 2027</td>
+            <td><a href="https://pki.opennicproject.org/ONICX2.crt">PEM</a>&nbsp;<a href="http://crl.pki.opennicproject.org/ONICX2.crl">CRL</a></td>
+          </tr>
+          <tr>
+            <td>OpenNIC Authority X3</td>
+            <td>RSA 2048, SHA-256</td>
+            <td>11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11	</td>
+            <td>January 28, 2027</td>
+            <td><a href="https://pki.opennicproject.org/ONICX3.crt">PEM</a>&nbsp;<a href="http://crl.pki.opennicproject.org/ONICX3.crl">CRL</a></td>
+          </tr>
+          <tr>
+            <td>OpenNIC Authority X4</td>
+            <td>RSA 2048, SHA-256</td>
+            <td>11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11:11	</td>
+            <td>January 28, 2027</td>
+            <td><a href="https://pki.opennicproject.org/ONICX4.crt">PEM</a>&nbsp;<a href="http://crl.pki.opennicproject.org/ONICX4.crl">CRL</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
